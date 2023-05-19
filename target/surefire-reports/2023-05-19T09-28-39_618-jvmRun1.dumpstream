@@ -1,0 +1,65 @@
+# Created at 2023-05-19T09:28:42.758
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: null
+java.io.EOFException
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:398)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+
+# Created at 2023-05-19T09:28:43.568
+Unexpected IOException with stream: 2023-05-19T09:28:43.566-04:00  INFO 60364 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+
+
+# Created at 2023-05-19T09:28:43.626
+Unexpected IOException with stream: 2023-05-19T09:28:43.625-04:00  INFO 60364 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+
+
+# Created at 2023-05-19T09:28:44.072
+Unexpected IOException with stream: 2023-05-19T09:28:44.071-04:00  INFO 60364 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL94Dialect
+
+
+# Created at 2023-05-19T09:28:44.075
+Unexpected IOException with stream: 2023-05-19T09:28:44.074-04:00  WARN 60364 --- [           main] org.hibernate.orm.deprecation            : HHH90000026: PostgreSQL94Dialect has been deprecated; use org.hibernate.dialect.PostgreSQLDialect instead
+
+
+# Created at 2023-05-19T09:28:44.963
+Unexpected IOException with stream: 2023-05-19T09:28:44.962-04:00  INFO 60364 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+
+
+# Created at 2023-05-19T09:28:45.087
+Unexpected IOException with stream: 2023-05-19T09:28:45.086-04:00  INFO 60364 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3f1d6a13
+
+
+# Created at 2023-05-19T09:28:45.091
+Unexpected IOException with stream: 2023-05-19T09:28:45.090-04:00  INFO 60364 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+
+
+# Created at 2023-05-19T09:28:45.139
+Unexpected IOException with stream: 2023-05-19T09:28:45.139-04:00  INFO 60364 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+
+
+# Created at 2023-05-19T09:28:45.149
+Unexpected IOException with stream: 2023-05-19T09:28:45.148-04:00  INFO 60364 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2023-05-19T09:28:45.718
+Unexpected IOException with stream: 2023-05-19T09:28:45.717-04:00  WARN 60364 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+
+
+# Created at 2023-05-19T09:28:46.324
+Unexpected IOException with stream: 2023-05-19T09:28:46.323-04:00  INFO 60364 --- [ionShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+
+
+# Created at 2023-05-19T09:28:46.327
+Unexpected IOException with stream: 2023-05-19T09:28:46.326-04:00  INFO 60364 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+
+
+# Created at 2023-05-19T09:28:46.329
+Unexpected IOException with stream: 2023-05-19T09:28:46.328-04:00  INFO 60364 --- [           main] c.e.u.UserScoreServiceApplicationTests   : Started UserScoreServiceApplicationTests in 5.293 seconds (process running for 6.438)
+
+
+# Created at 2023-05-19T09:28:46.340
+Unexpected IOException with stream: 2023-05-19T09:28:46.339-04:00  INFO 60364 --- [ionShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+
+
