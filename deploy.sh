@@ -23,7 +23,7 @@ docker rmi -f ${IMAGE}
 else
 echo "container ~${IMAGE} does not exist"
 fi
-mvn clean package &&
+mvn clean install &&
 echo "Creating Build for newly pulled code ..." && echo "" && \
 docker build -t ${IMAGE} . &&
 echo "Deploying the container ${IMAGE}_c ..." && echo "" && \

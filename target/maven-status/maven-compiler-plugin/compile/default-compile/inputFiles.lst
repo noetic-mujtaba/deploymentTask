@@ -1,0 +1,7 @@
+/home/mujtaba/deploymentTask/src/main/java/com/example/userscoreservice/entities/GamesScoreRecordEntity.java
+/home/mujtaba/deploymentTask/src/main/java/com/example/userscoreservice/repositories/GamesScoreRecordRepository.java
+/home/mujtaba/deploymentTask/src/main/java/com/example/userscoreservice/UserScoreServiceApplication.java
+/home/mujtaba/deploymentTask/src/main/java/com/example/userscoreservice/controllers/GamesRecordController.java
+/home/mujtaba/deploymentTask/src/main/java/com/example/userscoreservice/responses/ApiResponse.java
+/home/mujtaba/deploymentTask/src/main/java/com/example/userscoreservice/services/GamesRecordService.java
+/home/mujtaba/deploymentTask/src/main/java/com/example/userscoreservice/services/impl/GamesRecordServiceImpl.java
