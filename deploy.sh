@@ -5,6 +5,8 @@ APPNAME='deploymentask'
 DIR='/home/mujtaba/deploymentTask/'
 DIRLOG="/var/log/apps/deploymentTask/"
 IMAGE='deploymentask'
+CONTAINER='deploymentask_c'
+
 echo "Pull request from GitHub repo to ~${APPNAME} directory ..." && echo "" && \
 [ ! -d "${DIR}" ] && mkdir -p "${DIR}"
 [ ! -d "${DIRLOG}" ] && mkdir -p "${DIRLOG}"
@@ -13,7 +15,7 @@ git stash && git pull origin main &&
 firewall-cmd --permanent --add-port=10019/tcp &&
 firewall-cmd --reload &&
 echo "buildcomplete - moving on to docker"
-if [ $( docker ps -a | grep ${IMAGE}_c) | wc -l ) -gt 0 ]; then
+if [ $( docker ps -a | grep ${CONTAINER}) | wc -l ) -gt 0 ]; then
 echo "container ~${IMAGE} already exists"
 echo "Stopping ${IMAGE}_c from production environment ..." && echo "" && \
 docker stop ${IMAGE}_c  &&
