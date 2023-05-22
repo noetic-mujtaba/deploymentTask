@@ -1,9 +1,0 @@
-com/example/userscoreservice/repositories/GamesScoreRecordRepository.class
-com/example/userscoreservice/controllers/GamesRecordController.class
-com/example/userscoreservice/services/impl/GamesRecordServiceImpl.class
-com/example/userscoreservice/entities/GamesScoreRecordEntity.class
-com/example/userscoreservice/entities/GamesScoreRecordEntity$GamesScoreRecordEntityBuilder.class
-com/example/userscoreservice/responses/ApiResponse.class
-com/example/userscoreservice/responses/ApiResponse$ApiResponseBuilder.class
-com/example/userscoreservice/services/GamesRecordService.class
-com/example/userscoreservice/UserScoreServiceApplication.class
