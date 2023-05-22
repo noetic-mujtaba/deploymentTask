@@ -12,7 +12,8 @@ cd ${DIR}
 git stash && git pull origin main &&
 firewall-cmd --permanent --add-port=10019/tcp &&
 firewall-cmd --reload &&
-if [ $( docker ps -a | grep ${IMAGE} | wc -l ) -gt 0 ]; then
+echo "buildcomplete - moving on to docker"
+if [ $( docker ps -a | grep ${IMAGE}_c) | wc -l ) -gt 0 ]; then
 echo "container ~${IMAGE} already exists"
 echo "Stopping ${IMAGE}_c from production environment ..." && echo "" && \
 docker stop ${IMAGE}_c  &&
