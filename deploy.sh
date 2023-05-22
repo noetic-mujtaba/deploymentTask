@@ -24,7 +24,7 @@ echo "container ~${IMAGE} does not exist"
 fi
 /opt/apache-maven-3.9.2/bin/mvn clean install &&
 echo "Creating Build for newly pulled code ..." && echo "" && \
-docker build -t ${IMAGE} . &&
+docker buildx build -t ${IMAGE} . &&
 echo "Deploying the container ${IMAGE}_c ..." && echo "" && \
 [ ! -d "${DIRLOG}" ] && mkdir -p "${DIRLOG}"
 docker run -d --restart unless-stopped -p 10019:10019 -v ${DIRLOG}:${DIRLOG} --name ${IMAGE}_c ${IMAGE}  &&
