@@ -4,7 +4,8 @@
 APPNAME='deploymentask'
 DIR='/home/mujtaba/deploymentTask/'
 DIRLOG="/var/log/apps/deploymentTask/"
-IMAGE='deploymentTask'echo "Pull request from GitHub repo to ~${APPNAME} directory ..." && echo "" && \
+IMAGE='deploymentask'
+echo "Pull request from GitHub repo to ~${APPNAME} directory ..." && echo "" && \
 [ ! -d "${DIR}" ] && mkdir -p "${DIR}"
 [ ! -d "${DIRLOG}" ] && mkdir -p "${DIRLOG}"
 cd ${DIR}
