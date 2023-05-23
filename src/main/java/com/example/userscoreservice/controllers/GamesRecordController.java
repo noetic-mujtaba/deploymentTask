@@ -23,6 +23,6 @@ public class GamesRecordController {
     @PostMapping("/store-user-score")
     public ResponseEntity<?> storeGamesRecord(@RequestBody GamesScoreRecordEntity entity) {
         gamesRecordService.storeGamesRecord(entity);
-        return new ResponseEntity<>(new ApiResponse("Record stored successfully", true, new Date()), HttpStatus.CREATED);
+        return new ResponseEntity<>(new ApiResponse("Recordsuccessfully", true, new Date()), HttpStatus.CREATED);
     }
 }
