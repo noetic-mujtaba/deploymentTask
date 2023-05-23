@@ -12,7 +12,7 @@ echo "Pull request from GitHub repo to ~${APPNAME} directory ..." && echo "" && 
 [ ! -d "${DIRLOG}" ] && mkdir -p "${DIRLOG}"
 cd ${DIR}
 git stash && git pull origin main &&
-firewall-cmd --permanent --add-port=10019/tcp &&
+firewall-cmd --permanent --add-port=9090/tcp &&
 firewall-cmd --reload &&
 echo "buildcomplete - moving on to docker"
 if [ $( docker ps -a | grep ${CONTAINER} | wc -l ) -gt 0 ]; then
@@ -31,7 +31,7 @@ echo "Creating Build for newly pulled code ..." && echo "" && \
 docker buildx build -t ${IMAGE} . &&
 echo "Deploying the container ${IMAGE}_c ..." && echo "" && \
 [ ! -d "${DIRLOG}" ] && mkdir -p "${DIRLOG}"
-docker run -d --restart unless-stopped -p 10019:10019 -v ${DIRLOG}:${DIRLOG} --name ${IMAGE}_c ${IMAGE}  &&
+docker run -d --restart unless-stopped -p 9090:9090 -v ${DIRLOG}:${DIRLOG} --name ${IMAGE}_c ${IMAGE}  &&
 echo "Build Successfull ..." && echo "" &&
 
 echo "Success"
