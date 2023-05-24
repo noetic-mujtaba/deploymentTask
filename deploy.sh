@@ -12,7 +12,7 @@ echo "Pull request from GitHub repo to ~${APPNAME} directory ..." && echo "" && 
 [ ! -d "${DIRLOG}" ] && mkdir -p "${DIRLOG}"
 cd ${DIR}
 echo "moving to  git pull"
-#git stash && git pull origin main 
+git stash && git pull origin main 
 
 echo "moving to docker"
 
