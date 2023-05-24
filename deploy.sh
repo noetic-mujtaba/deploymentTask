@@ -12,11 +12,12 @@ echo "Pull request from GitHub repo to ~${APPNAME} directory ..." && echo "" && 
 [ ! -d "${DIRLOG}" ] && mkdir -p "${DIRLOG}"
 cd ${DIR}
 echo "moving to  git pull"
-git stash && git pull origin main &&
-firewall-cmd --permanent --add-port=9090/tcp &&
-firewall-cmd --reload &&
+#git stash && git pull origin main 
+
+echo "moving to docker"
+
 if [ $( docker ps -a | grep ${CONTAINER} | wc -l ) -gt 0 ]; then
-echo "container ~${IMAGE} already exists"
+echo "container ~${IMAGE}_c already exists"
 echo "Stopping ${IMAGE}_c from production environment ..." && echo "" && \
 docker stop ${IMAGE}_c  &&
 echo "destroying ${IMAGE}_c container  ..." && echo "" && \
